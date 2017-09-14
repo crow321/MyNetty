@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>zhp</groupId>
+    <artifactId>my_netty</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- 设置jdk版本 项目编码-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <netty.version>4.1.15.Final</netty.version>
+        <spring.version>4.3.8.RELEASE</spring.version>
+        <slf4j.version>1.7.25</slf4j.version>
+    </properties>
+
+    <dependencies>
+        <!--<dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <!-- 定义项目的 jdk 版本-->
+            <!--<plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>-->
+
+            <!-- 复制依赖的jar包到指定的文件夹里 -->
+            <!-- <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-dependency-plugin</artifactId>
+                 <version>2.6</version>
+                 <executions>
+                     <execution>
+                         <id>copy-dependencies</id>
+                         <phase>package</phase>
+                         <goals>
+                             <goal>copy-dependencies</goal>
+                         </goals>
+                         <configuration>
+                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                             &lt;!&ndash; 表示是否不包含间接依赖的包 &ndash;&gt;
+                             <excludeTransitive>false</excludeTransitive>
+                         </configuration>
+                     </execution>
+                 </executions>
+             </plugin>
+
+             &lt;!&ndash; 打成 jar 包时，设定manifest 的参数，如指定运行的Main Class，依赖的jar包，加入classpath中 &ndash;&gt;
+           <plugin>
+                 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-jar-plugin</artifactId>
+                 <version>2.6</version>
+                 <configuration>
+                     <archive>
+                         <manifest>
+                             <addClasspath>true</addClasspath>
+                             <classpathPrefix>libs</classpathPrefix>
+                             <mainClass>cn.CustomServerrver</mainClass>
+                         </manifest>
+                     </archive>
+                 </configuration>
+             </plugin>-->
+
+            <!-- 在maven中运行Ant任务，比如在打包阶段，对文件进行复制 -->
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target name="copy">
+                                <delete>
+                                    <fileset dir="target" includes="*.properties"></fileset>
+                                </delete>
+                                <copy todir="target">
+                                    <fileset dir="files"></fileset>
+                                </copy>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!-- 用于一键部署，把本地打包的jar文件，上传到远程服务器，并执行服务器上的shell命令 -->
+            <!--<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <version>1.0</version>
+                <configuration>
+                    <serverId>crawler</serverId>
+                    <fromDir>target</fromDir>
+                    <includes>*.jar,*.properties,*.sh</includes>
+                    &lt;!&ndash; 修改远程IP &ndash;&gt;
+                    <url>sftp://59.110.162.178/home/zhangxianhe</url>
+                    &lt;!&ndash; 修改命令 &ndash;&gt;
+                    <commands>
+                        <command>chmod 755 /home/zhangxianhe/update.sh</command>
+                        <command>/home/zhangxianhe/update.sh</command>
+                    </commands>
+                    <displayCommandOutputs>true</displayCommandOutputs>
+                </configuration>
+            </plugin>-->
+
+            <!-- 用于远程部署 Java Web 项目 -->
+            <!--<plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://59.110.162.178:8080/manager/text</url>
+                    <username>linjinbin</username>
+                    <password>linjinbin</password>
+                </configuration>
+            </plugin>-->
+
+            <!-- 用于把多个jar包，打成1个jar包,
+                 一般Java项目都会依赖其他第三方jar包，最终打包时，希望把其他jar包包含在一个jar包里 -->
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <manifestEntries>
+                                        <Main-Class>com.meiyou.topword.App</Main-Class>
+                                        <X-Compile-Source-JDK>${maven.compile.source}</X-Compile-Source-JDK>
+                                        <X-Compile-Target-JDK>${maven.compile.target}</X-Compile-Target-JDK>
+                                    </manifestEntries>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+        </plugins>
+    </build>
+
+
+</project>
