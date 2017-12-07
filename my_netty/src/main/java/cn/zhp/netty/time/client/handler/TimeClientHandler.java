@@ -15,13 +15,12 @@ import org.slf4j.LoggerFactory;
  */
 public class TimeClientHandler extends ChannelInboundHandlerAdapter {
     private final static Logger logger = LoggerFactory.getLogger(TimeClientHandler.class);
-
-   private final ByteBuf firstMessage;
+    private byte[] req;
+    private int counter;
 
     public TimeClientHandler() {
-        byte[] req = "QUERY TIME ORDER".getBytes();
-        firstMessage = Unpooled.buffer(req.length);
-        firstMessage.writeBytes(req);
+        req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
+
     }
 
 
@@ -33,8 +32,13 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ByteBuf message = null;
         logger.debug("*** Time Client *** channel active ");
-        ctx.writeAndFlush(firstMessage);
+        for (int i = 0; i < 100; i++) {
+            message = Unpooled.buffer(req.length);
+            message.writeBytes(req);
+            ctx.writeAndFlush(message);
+        }
     }
 
     @Override
@@ -48,22 +52,25 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
             m.release();
         }*/
 
-       //With the updated decoder, the TimeClientHandler does not use ByteBuf anymore:
+        //With the updated decoder, the TimeClientHandler does not use ByteBuf anymore:
        /* UnixTime m = (UnixTime) msg;
         System.out.println(m);
         ctx.close();*/
 
-        ByteBuf buf = (ByteBuf) msg;
+        /*ByteBuf buf = (ByteBuf) msg;
         byte[] req = new byte[buf.readableBytes()];
         buf.readBytes(req);
         String body = new String(req, "UTF-8");
-        logger.debug("*** Time Client *** <read----> Now is: {}", body);
-        ctx.close();
+        logger.debug("================> Now is: {}; the counter is {}", body, ++counter);
+        ctx.close();*/
+        String body = (String) msg;
+        logger.debug("================> Now is: {}; the counter is {}", body, ++counter);
+//        ctx.close();
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        logger.error("************************** error:{}",cause.getMessage());
+        logger.error("************************** error:{}", cause.getMessage());
         ctx.close();
     }
 }

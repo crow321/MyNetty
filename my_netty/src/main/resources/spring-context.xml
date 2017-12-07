@@ -7,11 +7,15 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="cn.zhp.netty"/>
+    <context:component-scan base-package="cn.zhp.netty">
+        <context:include-filter type="custom" expression="cn.zhp.netty.codec.serializable.subscribe.server.SubscribeServer"/>
+    </context:component-scan>
+    <!-- 加载配置文件 -->
+    <context:property-placeholder location="classpath:conf/config.properties"/>
+
 
     <bean name="kmipEncoder" class="cn.qtec.key.kmip.process.encoder.KMIPEncoder"/>
     <bean name="kmipDecoder" class="cn.qtec.key.kmip.process.decoder.KMIPDecoder"/>
-    <context:property-placeholder location="classpath:config.properties"/>
 
     <!-- for Netty Handler junit test -->
     <bean name="channel" class="io.netty.channel.embedded.EmbeddedChannel">
@@ -20,4 +24,6 @@
         <!-- serverLoginAuthRespHandler 使用-->
         <!--<constructor-arg name="handlers" ref="serverLoginAuthRespHandler"/>-->
     </bean>
+
+
 </beans>

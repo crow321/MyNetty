@@ -3,6 +3,7 @@ package cn.zhp.netty.base.server;
 import cn.zhp.netty.custom.handler.codec.NettyMessageDecoder;
 import cn.zhp.netty.custom.handler.codec.NettyMessageEncoder;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelInitializer;
@@ -11,8 +12,11 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.string.StringDecoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -26,13 +30,11 @@ import java.util.ArrayList;
 @Component
 public class NettyServer {
     private final static Logger logger = LoggerFactory.getLogger(NettyServer.class);
-
+    @Value(value = "${netty_default_port}")
     private int port;
-    private ArrayList<ChannelHandler> childChannels;
+    private ArrayList<ChannelHandler> childChannels = new ArrayList<>();
 
     public NettyServer() {
-        port = 6666;
-        childChannels = new ArrayList<>();
     }
 
     public NettyServer(int port) {
@@ -80,7 +82,7 @@ public class NettyServer {
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
         @Override
         protected void initChannel(SocketChannel socketChannel) throws Exception {
-//            socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
+//            socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, Unpooled.copiedBuffer("$_".getBytes())));
 //            socketChannel.pipeline().addLast(new StringDecoder());
 
             socketChannel.pipeline().addLast(new NettyMessageDecoder());

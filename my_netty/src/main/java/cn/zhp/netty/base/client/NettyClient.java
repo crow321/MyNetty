@@ -13,6 +13,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.ArrayList;
 import java.util.concurrent.Executors;
@@ -26,16 +27,16 @@ import java.util.concurrent.ScheduledExecutorService;
  */
 public class NettyClient {
     private final static Logger logger = LoggerFactory.getLogger(NettyClient.class);
-
+    @Value(value = "${local_host}")
     private String host;
+    @Value(value = "${netty_default_port}")
     private int port;
     private ArrayList<ChannelHandler> childChannelHandlers = new ArrayList<>();
     //客户端重连使用
     private ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 
     public NettyClient() {
-        this.host = "127.0.0.1";
-        this.port = 6666;
+
     }
 
     public NettyClient(String host, int port) {

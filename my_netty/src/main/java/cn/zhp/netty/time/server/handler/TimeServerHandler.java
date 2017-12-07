@@ -17,6 +17,7 @@ import java.util.Date;
  */
 public class TimeServerHandler extends ChannelInboundHandlerAdapter {
     private final static Logger logger = LoggerFactory.getLogger(TimeServerHandler.class);
+    private int counter;
 
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
@@ -24,39 +25,23 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
         super.channelRegistered(ctx);
     }
 
-    /**
-     * the channelActive() method will be invoked when a connection is established and ready to generate traffic.
-     * Let's write a 32-bit integer that represents the current time in this method.
-     * @param ctx
-     * @throws Exception
-     */
-    /*@Override
-    public void channelActive(final ChannelHandlerContext ctx) throws Exception {
-        logger.debug("######## channel active...");
-        *//*final ByteBuf time = ctx.alloc().buffer(4);
-        time.writeByte((int) (System.currentTimeMillis() / 1000L + 2208988800L));
-
-        final ChannelFuture future = ctx.writeAndFlush(time);
-        future.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture channelFuture) throws Exception {
-                assert future == channelFuture;
-                ctx.close();
-            }
-        });*//*
-    }*/
-
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf buf = (ByteBuf) msg;
+        /*ByteBuf buf = (ByteBuf) msg;
         byte[] req = new byte[buf.readableBytes()];
         //将缓冲区 buf 的字节数组复制到 req 中
         buf.readBytes(req);
-        String body = new String(req, "UTF-8");
-        logger.debug("### Time Server ^_^=================>> read receive order: {}", body);
-
+        String body = new String(req, "UTF-8").substring(0, req.length - System.getProperty("line.separator").length());
+        logger.debug("### Time Server ^_^=================>> read receive order: {}; the counter is {}", body, ++counter);
         // 返回给客户端的消息
         String currentTime = "QUERY TIME ORDER".equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString() : "BAD ORDER";
+        ByteBuf resp = Unpooled.copiedBuffer(currentTime.getBytes());
+        ctx.writeAndFlush(resp);*/
+        String body = (String) msg;
+        logger.debug("### Time Server ^_^=================>> read receive order: {}; the counter is {}", body, ++counter);
+        // 返回给客户端的消息
+        String currentTime = "QUERY TIME ORDER".equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString() : "BAD ORDER";
+        currentTime = currentTime + System.getProperty("line.separator");
         ByteBuf resp = Unpooled.copiedBuffer(currentTime.getBytes());
         ctx.writeAndFlush(resp);
     }
@@ -64,7 +49,7 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         logger.debug("### Time Server ### read completed...");
-        ctx.flush();
+//        ctx.flush();
     }
 
     @Override

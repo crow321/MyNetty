@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="my_netty" />
+        <module name="my_algorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="my_algorithm" target="1.8" />
       <module name="my_netty" target="1.8" />
     </bytecodeTargetLevel>
   </component>
