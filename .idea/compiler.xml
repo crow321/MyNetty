@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
+        <module name="MyNetty" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithm" target="1.8" />
+      <module name="my_netty" target="1.8" />
+      <module name="MyNetty" target="1.8" />
+      <module name="netty4" target="1.8" />
+      <module name="open-jdk" target="1.8" />
+      <module name="openjdk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

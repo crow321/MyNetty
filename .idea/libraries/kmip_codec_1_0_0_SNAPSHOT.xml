@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="kmip-codec-1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Projects/MyNetty/lib/kmip-codec-1.0.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
