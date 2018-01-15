@@ -2,110 +2,170 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd773f8f-ca0c-4eac-8b97-b09304024843" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/kmip_codec_1_0_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/linux/libJNI_QKey.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/linux/libJNI_QKey.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/windows/x64/JNI_QKey.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/windows/x64/JNI_QKey.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/windows/x86/JNI_QKey.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/bin/lib/windows/x86/JNI_QKey.lib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/assembly/assembly.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/algorithm/IAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/algorithm/impl/AlgorithmImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/constant/EncryptionAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/constant/KeyGenerateType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/constant/MessageType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/constant/StatusEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/demo/Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/entity/AccessAuthInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/entity/SessionInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/handler/AuthenticationClientHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/jni/QKeyService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/message/AuthenticationMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/message/BaseMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/message/TransportMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/netty/AuthenticationClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/process/ProcessInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/process/impl/ProcessImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/security/ISecurity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/security/impl/SecurityImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/utils/HexUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/utils/JniUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/java/cn/qtec/access/auth/client/utils/PacketUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/main/resources/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/test/java/test/BaseJunit4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/test/java/test/jni/QKeyServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationClient/src/test/java/test/process/ProcessImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/.css/coverage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/.img/arrowDown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/.img/arrowUp.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/.classes/AuthServerDisconnect.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/.classes/AuthenticationProcessor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_BLOCK.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_CLASS.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_CLASS_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_LINE.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_LINE_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_METHOD.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_METHOD_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/cn.qtec.qkcl.access.auth.server.process/index_SORT_BY_NAME_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_BLOCK.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_CLASS.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_CLASS_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_LINE.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_LINE_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_METHOD.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_METHOD_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AuthenticationProcessorTestReport_20171207/index_SORT_BY_NAME_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/my_algorithm.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/security/single_track/Base64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/security/single_track/HMAC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/security/single_track/MD5.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/security/single_track/SHA.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/security/single_track/SHA256.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/main/java/cn/zhp/test/utils/FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/src/test/1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/security/single_track/Base64.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/security/single_track/HMAC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/security/single_track/MD5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/security/single_track/SHA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/security/single_track/SHA256.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_netty/my_algorithm/target/classes/cn/zhp/test/utils/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/dictionaries/zhangp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/thriftCompiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/netty_codec/pom.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/linux/libJNI_QKey.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/linux/libJNI_QKey.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/windows/x64/JNI_QKey.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/windows/x64/JNI_QKey.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/windows/x86/JNI_QKey.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/lib/windows/x86/JNI_QKey.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/crc32/CRC32_win_x64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/libusb-1.0.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_linux_x64.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_linux_x64.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_win_x64.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_win_x64.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_win_x86.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/resources/lib/libjni_qkey_win_x86.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/process/report/LocalAuthProcessorJunitReport_20171228.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/process/report/QShiledProcessorJuintReport_20171228.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/test/java/report/AuthenticationServer20171228.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/algorithm/IAlgorithm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/algorithm/impl/AlgorithmImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/constant/EncryptionAlgorithm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/constant/MessageType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/constant/StatusEnum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/dao/IAuthenticationInfoDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/dao/impl/AuthenticationInfoDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/entity/AuthRespInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/entity/AuthenticationInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/entity/SessionInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/handler/AuthenticationServerHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/handler/ChildHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/message/AuthenticationMessage.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/netty/AuthenticationServer$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/netty/AuthenticationServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/process/AuthServerDisconnect.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/process/AuthenticationProcessor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/security/CrypUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/security/ISecurity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/security/impl/SecurityImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/utils/CRC32Util.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/utils/HexUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/utils/PacketUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/utils/SessionMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/cn/qtec/qkcl/access/auth/server/utils/SocketChannelMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/test-classes/test/BaseJunit4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/test-classes/test/dao/AuthenticationInfoDaoImplTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/test-classes/test/process/AuthenticationProcessorTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/security/single_track/Base64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/security/single_track/HMAC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/security/single_track/MD5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/security/single_track/SHA.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/security/single_track/SHA256.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/target/classes/cn/zhp/test/utils/FileUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/authentication-client.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/crc32/CRC32Local.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/crc32/cn_qtec_qkcl_access_auth_client_jni_CRC32Local.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/crc32/crc32.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/inc/Qkey.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/inc/QkeyError.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/inc/jni_QKeyService.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/CRC32Local.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/HidTrans.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/HidTrans.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/Qkey.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/QkeyDefines.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/QkeyFactory.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/QkeyFile.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/QkeyFile.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/aes.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/aes.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/crypto.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/crypto.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/hid.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/hidapi.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/iconv.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/jni_QKeyService.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/libusb.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/bin/src/windows/hid.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/local/build/assembly.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/algorithm/IAlgorithm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/algorithm/impl/AlgorithmImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/constant/AuthModeEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/constant/EncryptionAlgorithmEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/constant/StatusEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/demo/Client.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/demo/MultiThreadClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/entity/AccessAuthInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/entity/AuthAssistInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/entity/AuthClientSessionInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/jni/QKeyService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/message/AuthenticationMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/message/BaseMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/message/TransportMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/netty/AuthenticationClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/netty/TimerTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/process/AbstractAuthClientProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/process/impl/LocalAuthProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/process/impl/QShieldAuthProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/security/CrypUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/security/ISecurity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/security/impl/SecurityImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/utils/CRC32Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/utils/HexUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/utils/JniUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/main/java/cn/qtec/qkcl/access/auth/client/utils/PacketUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/BaseJunit4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/jni/QKeyServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/process/LocalProcessorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationClient/src/test/java/test/process/QShiledProcessorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/authentication-server.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/algorithm/IAlgorithm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/algorithm/impl/AlgorithmImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/constant/EncryptionAlgorithm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/constant/MessageType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/constant/StatusEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/dao/IAuthenticationInfoDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/dao/impl/AuthenticationInfoDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/entity/AuthRespInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/entity/AuthenticationInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/entity/SessionInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/handler/AuthenticationServerHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/handler/ChildHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/message/AuthenticationMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/netty/AuthenticationServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/process/AuthServerDisconnect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/process/AuthenticationProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/security/CrypUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/security/ISecurity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/security/impl/SecurityImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/utils/CRC32Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/utils/HexUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/utils/PacketUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/utils/SessionMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/java/cn/qtec/qkcl/access/auth/server/utils/SocketChannelMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/auth-hibernate.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/auth-spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/hibernate-config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/junit-spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/main/resources/qkey_authentication_info20171225.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/test/java/test/BaseJunit4.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/test/java/test/dao/AuthenticationInfoDaoImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/src/test/java/test/process/AuthenticationProcessorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/auth-hibernate.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/auth-spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/hibernate-config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/junit-spring.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Authentication/AuthenticationServer/target/classes/qkey_authentication_info20171225.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/algorithm.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/my_algorithm.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/security/single_track/Base64.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/security/single_track/HMAC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/security/single_track/MD5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/security/single_track/SHA.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/security/single_track/SHA256.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/main/java/cn/zhp/test/utils/FileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_algorithm/src/test/1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_netty/my_netty.iml" afterPath="$PROJECT_DIR$/my_netty/my_netty.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/../../Projects/MyNetty/target/" />
     <ignored path="$PROJECT_DIR$/../../Projects/openjdk/target/" />
@@ -140,7 +200,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
-                <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+                <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -221,6 +281,7 @@
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -280,6 +341,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyNetty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -844,12 +935,20 @@
       <workItem from="1512180627214" duration="250000" />
       <workItem from="1514547662860" duration="4550000" />
       <workItem from="1514854276078" duration="420000" />
-      <workItem from="1515990047456" duration="295000" />
+      <workItem from="1515990047456" duration="439000" />
     </task>
+    <task id="LOCAL-00001" summary="增加接入认证模块">
+      <created>1515990361570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515990361570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5742000" />
+    <option name="totallyTimeSpent" value="5886000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -884,9 +983,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.492569" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26980728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -931,6 +1030,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加接入认证模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加接入认证模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1078,7 +1181,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+            <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1102,7 +1205,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
